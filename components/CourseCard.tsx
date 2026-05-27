@@ -31,7 +31,7 @@ export default function CourseCard({ }: Props) {
         <Card className="max-w-md overflow-hidden py-0 gap-0">
             <div className="relative w-full h-[180px]">
                 <Image
-                    src="/assets/picture/blockchain.jpg"
+                    src="/assets/picture/Blockchain.jpg"
                     alt="Blockchain"
                     fill
                     quality={100}

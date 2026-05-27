@@ -4,7 +4,7 @@ export default function Banner() {
     return (
         <div className="relative w-full h-64 rounded-xl overflow-hidden">
             <Image
-                src="/assets/picture/banner.jpg"
+                src="/assets/picture/Banner.jpg"
                 alt="Banner"
                 fill
                 priority
