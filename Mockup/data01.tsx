@@ -1,9 +1,9 @@
 export const courses = [
     {
         id: 1,
-        image: "/assets/picture/Blockchain.jpg",
-        title: "Blockchain Fundamentals for Beginners",
-        university: "Kasetsart University",
+        image: "/assets/picture/Webdev.jpg",
+        title: "Introduction to Web Development",
+        university: "Chulalongkorn University",
         date: "Oct 15, 2025",
         time: "9:30 AM – 12:00 PM",
         location: "Online Event",

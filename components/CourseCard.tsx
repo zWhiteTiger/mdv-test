@@ -14,6 +14,8 @@ import {
 import { TbFileCertificate } from "react-icons/tb";
 import { GlassButton } from "./ui/glass-button";
 import { courses } from "@/Mockup/data01";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
 type Course = {
     id: number;
@@ -176,9 +178,11 @@ export default function CourseCard({ course }: Props) {
                     </div>
 
                     {course.extensionAvailable && (
-                        <button className="bg-blue-300/25 text-blue-600 font-bold rounded-full py-2 px-3">
-                            Extension Available
-                        </button>
+                        <Link href={"/course-webdev"}>
+                            <GlassButton className="bg-blue-300/25 text-blue-600 font-bold rounded-full py-2 px-3">
+                                Extension Available
+                            </GlassButton>
+                        </Link>
                     )}
                 </div>
             </CardContent>
