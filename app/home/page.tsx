@@ -3,6 +3,7 @@ import CategoryNav from '@/components/CategoryNav'
 import CourseCard from '@/components/CourseCard'
 import LoadingCard from '@/components/LoadingCard'
 import SearchBar from '@/components/SearchBar'
+import { courses } from '@/Mockup/data01'
 import React from 'react'
 
 type Props = {}
@@ -14,16 +15,12 @@ export default function page({ }: Props) {
 
             <div className='py-2 gap-2 flex flex-col'>
                 <SearchBar />
+            </div>
+
+            <div className="">
                 <CategoryNav />
             </div>
 
-            <div className="my-2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 w-full">
-                {Array.from({ length: 1 }).map((_, index) => (
-                    <CourseCard key={index} />
-                ))}
-
-                <LoadingCard/>
-            </div>
         </div>
     )
 }
